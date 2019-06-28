@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vong lap long nhau</title>
+    <style>
+        table {
+            padding: 300px;
+
+        }
+
+    </style>
+</head>
+<body>
+<script>
+    // let sout;
+    // sout = "<table border='1' width ='300' cellspacing ='0' cellspacing = '3'>";
+    // for (i = 1; i <= 10; i++) {
+    //     sout = sout + "<tr>";
+    //     for (j = 1; j <= 10; j++) {
+    //         sout = sout + "<td>" + i * j + "</td>";
+    //     }
+    //     sout = sout + "</tr>";
+    // }
+    //
+    // sout = sout + "</table>";
+    // document.write(sout);
+
+
+    let i = 1;
+    let j = 1;
+    i =j =1;
+    sout = "<table border='1' width ='300' cellspacing ='0' cellspacing = '3'>";
+    while (i <= 10) {
+        sout = sout + "<tr>";
+        while (j <= 10) {
+            sout = sout + "<td>" + i * j + "</td>";
+            j++;
+        }
+        sout = sout + "</tr>";
+        j = 1;
+        i++;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+</body>
+</html>
